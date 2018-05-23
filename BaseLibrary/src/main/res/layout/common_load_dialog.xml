@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialogView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/common_dialog_bg"
+    android:gravity="center_horizontal"
+    android:minWidth="@dimen/DIMEN_SIZE_120DP"
+    android:orientation="vertical"
+    android:padding="@dimen/DIMEN_SIZE_10DP">
+
+    <com.xiaozhu.common.widget.loading.LoadingAnimationView
+        android:id="@+id/loadAnim"
+        android:layout_width="@dimen/DIMEN_SIZE_150DP"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:minHeight="@dimen/DIMEN_SIZE_60DP" />
+
+    <com.xiaozhu.common.widget.text.GraduallyTextView
+        android:id="@+id/gradually"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/DIMEN_SIZE_10DP"
+        android:textColor="@color/white"
+        android:textSize="@dimen/DIMEN_SIZE_16DP" />
+
+    <com.xiaozhu.common.widget.text.FadeInTextView
+        android:id="@+id/fadeIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/DIMEN_SIZE_10DP"
+        android:textColor="@color/white"
+        android:textSize="@dimen/DIMEN_SIZE_16DP" />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/DIMEN_SIZE_10DP"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/DIMEN_SIZE_15DP" />
+
+</LinearLayout>

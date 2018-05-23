@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.xiaozhu.common.widget.fillet.FilletRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        app:round_corner_bottom_left="20dp"
+        app:round_corner_bottom_right="20dp"
+        app:round_corner_top_left="20dp"
+        app:round_corner_top_right="20dp"
+        app:stroke_color="#ff0000"
+        app:stroke_width="2dp">
+
+        <ImageView
+            android:id="@+id/images"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#80000000"
+            android:gravity="center"
+            android:minHeight="40dp"
+            android:textColor="@color/colorAccent" />
+
+    </com.xiaozhu.common.widget.fillet.FilletRelativeLayout>
+
+    <com.xiaozhu.common.widget.fillet.FilletImageView
+        android:id="@+id/filletImg"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:scaleType="centerCrop"
+        app:round_corner_bottom_left="20dp"
+        app:round_corner_bottom_right="20dp"
+        app:round_corner_top_left="20dp"
+        app:round_corner_top_right="20dp"
+        app:stroke_color="#ff0000"
+        app:stroke_width="1dp" />
+
+</LinearLayout>

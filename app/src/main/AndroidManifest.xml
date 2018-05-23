@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xiaozhu.dome">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".app.DomeApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.list.ListDataActivity"
+            android:label="列表"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.banner.BannerActivity"
+            android:label="轮播"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.fillet.FilletActivity"
+            android:label="圆角"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.progress.ProgressActivity"
+            android:label="进度条"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.loading.LoadingActivity"
+            android:label="加载对话框"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.indicator.IndicatorActivity"
+            android:label="指示器"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.http.HttpActivity"
+            android:label="http请求"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.log.LogActivity"
+            android:label="日志输出"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.web.WebViewActivity"
+            android:label="网页"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.title.TitleBarActivity"
+            android:label="标题栏"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.expandable.ExpandableActivity"
+            android:label="折叠TextView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.refresh.RefreshActivity"
+            android:label="刷新ListView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.refresh.RefreshListActivity"
+            android:label="刷新List"
+            android:screenOrientation="portrait" />
+        <!--QQ-->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"/>
+    </application>
+
+</manifest>

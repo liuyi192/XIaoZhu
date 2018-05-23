@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SmoothCheckBox">
+        <attr name="check_duration" format="integer" />
+        <attr name="check_stroke_width" format="dimension" />
+        <attr name="check_color_tick" format="color" />
+        <attr name="check_color_checked" format="color" />
+        <attr name="check_color_unchecked" format="color" />
+        <attr name="check_color_unchecked_stroke" format="color" />
+    </declare-styleable>
+</resources>

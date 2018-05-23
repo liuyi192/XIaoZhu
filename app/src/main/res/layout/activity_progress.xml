@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <com.xiaozhu.common.widget.progress.NumberProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        app:progress_current="0"
+        app:progress_max="100"
+        app:progress_reached_bar_height="1.5dp"
+        app:progress_reached_color="@color/colorPrimary"
+        app:progress_text_color="#ffea00"
+        app:progress_text_size="16dp"
+        app:progress_unreached_bar_height="1dp"
+        app:progress_unreached_color="@color/colorAccent" />
+
+    <com.xiaozhu.common.widget.progress.RoundProgressBar
+        android:id="@+id/circleProgress"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        app:orientation="circle"
+        app:percent_text_color="@color/colorAccent"
+        app:percent_text_size="16dp"
+        app:progressColor="@color/colorPrimary" />
+
+    <com.xiaozhu.common.widget.progress.RoundProgressBar
+        android:id="@+id/horizontalProgress"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        app:isHorizonStroke="true"
+        app:orientation="horizontal"
+        app:percent_stroke_width="1dp"
+        app:percent_text_color="@color/colorAccent"
+        app:percent_text_size="16dp"
+        app:progressColor="@color/colorPrimary"
+        app:rect_round="10dp" />
+
+    <com.xiaozhu.common.widget.progress.RoundProgressBar
+        android:id="@+id/sectorProgress"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        app:orientation="sector"
+        app:sectorColor="@color/red"
+        app:unSweepColor="@color/white" />
+
+</LinearLayout>

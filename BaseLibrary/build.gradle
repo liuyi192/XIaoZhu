@@ -1,0 +1,61 @@
+apply plugin: 'com.android.library'
+
+def config = rootProject.ext.version
+def library = rootProject.ext.library
+
+android {
+    compileSdkVersion config.compileSdkVersion
+    defaultConfig {
+        minSdkVersion config.minSdkVersion
+        targetSdkVersion config.targetSdkVersion
+        versionCode config.versionCode
+        versionName config.versionName
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true
+            }
+        }
+    }
+
+    buildTypes {
+        debug {
+
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    compile library.appcompat_v7
+    compile library.recyclerview
+    compile library.multidex
+    compile library.design
+    //消息
+    compile library.eventbus
+    //加载图片
+    compile library.glide
+    //网络模块
+    compile library.retrofit
+    compile library.converter_gson
+    compile library.adapter_rxjava
+    compile library.logging_interceptor
+    compile library.rxandroid2
+    compile library.rxjava2
+    //数据库
+    compile library.ormlite_core
+    compile library.ormlite_android
+    //注解
+    compile library.butterknife
+    //数据统计
+    compile library.umeng_common
+    compile library.umeng_analytics
+
+    compile library.umeng_share_code
+    compile library.umeng_share_wechat
+    compile library.umeng_share_qq
+}

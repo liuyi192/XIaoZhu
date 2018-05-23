@@ -1,0 +1,70 @@
+Properties properties = new Properties()
+properties.load(project.rootProject.file('local.properties').newDataInputStream())
+
+ext {
+    version = [
+            //程序版本
+            versionCode              : 1,
+            versionName              : "1.0",
+            //SDK版本
+            minSdkVersion            : 15,
+            targetSdkVersion         : 27,
+            compileSdkVersion        : 27,
+            buildToolsVersion        : "27.0.3",
+            //support版本
+            supportVersion           : "27.1.0",
+            supportConstraintVersion : "1.0.2",
+            //multidex版本
+            multidexVersion          : "1.0.1",
+            //eventBus版本
+            eventBusVersion          : "3.0.0-beta1",
+            //GSON版本
+            gsonVersion              : "2.8.2",
+            //glide版本
+            glideVersion             : "3.7.0",
+            //网络模块
+            retrofitVersion          : "2.3.0",
+            converterGsonVersion     : "2.3.0",
+            adapterRxjavaVersion     : "2.3.0",
+            loggingInterceptorVersion: "3.8.0",
+            rxandroid2Version        : "2.0.1",
+            rxjava2Version           : "2.1.0",
+            //数据库
+            ormliteVersion           : "4.48",
+            //注解
+            butterknifeVersion       : "7.0.1",
+            //友盟
+            umengCommonVersion       : "1.5.0",
+            umengAnalyticsVersion    : "7.5.0",
+    ]
+    library = [
+            appcompat_v7       : "com.android.support:appcompat-v7:${version.supportVersion}",
+            appcompat_v4       : "com.android.support:appcompat-v4:${version.supportVersion}",
+            multidex           : "com.android.support:multidex:${version.multidexVersion}",
+            constraint_layout  : "com.android.support.constraint:constraint-layout:${version.supportConstraintVersion}",
+            eventbus           : "de.greenrobot:eventbus:${version.eventBusVersion}",
+            recyclerview       : "com.android.support:recyclerview-v7:${version.supportVersion}",
+            glide              : "com.github.bumptech.glide:glide:${version.glideVersion}",
+            gson               : "com.google.code.gson:gson:${version.gsonVersion}",
+            design             : "com.android.support:design:${version.supportVersion}",
+            //网络模块
+            retrofit           : "com.squareup.retrofit2:retrofit:${version.retrofitVersion}",
+            converter_gson     : "com.squareup.retrofit2:converter-gson:${version.converterGsonVersion}",
+            adapter_rxjava     : "com.squareup.retrofit2:adapter-rxjava2:${version.adapterRxjavaVersion}",
+            logging_interceptor: "com.squareup.okhttp3:logging-interceptor:${version.loggingInterceptorVersion}",
+            //RxJava
+            rxandroid2         : "io.reactivex.rxjava2:rxandroid:${version.rxandroid2Version}",
+            rxjava2            : "io.reactivex.rxjava2:rxjava:${version.rxjava2Version}",
+            //数据库
+            ormlite_core       : "com.j256.ormlite:ormlite-core:${version.ormliteVersion}",
+            ormlite_android    : "com.j256.ormlite:ormlite-android:${version.ormliteVersion}",
+            butterknife        : "com.jakewharton:butterknife:${version.butterknifeVersion}",
+            //友盟
+            umeng_common       : "com.umeng.sdk:common:${version.umengCommonVersion}",
+            umeng_analytics    : "com.umeng.sdk:analytics:${version.umengAnalyticsVersion}",
+            //分享
+            umeng_share_code   : "com.umeng.sdk:share-core:latest.integration",
+            umeng_share_wechat : "com.umeng.sdk:share-wechat:latest.integration",
+            umeng_share_qq     : "com.umeng.sdk:share-qq:6.9.1.1"
+    ]
+}

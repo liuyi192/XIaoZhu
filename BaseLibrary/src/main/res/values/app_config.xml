@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--程序包名-->
+    <string name="app_package">com.xiaozhu.common</string>
+    <!--程序文件夹名称-->
+    <string name="file_fold">@string/app_name</string>
+    <!--log日志级别-->
+    <integer name="log_level">3</integer>
+    <!--数据库版本-->
+    <integer name="databaseVersion">1</integer>
+    <string name="databaseName">xiaozhu.db</string>
+    <!--友盟统计-->
+    <string name="umengAppKey">59e57413f5ade461ef0000b7</string>
+    <string name="umengChannel">@string/app_name</string>
+</resources>

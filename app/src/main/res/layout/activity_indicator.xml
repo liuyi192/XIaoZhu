@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.xiaozhu.common.widget.indicator.IndicatorView
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_SIZE_60DP"
+        android:background="@color/common_color"
+        android:orientation="horizontal"
+        app:indicator_color="@color/colorAccent"
+        app:indicator_height="@dimen/DIMEN_SIZE_2DP"
+        app:indicator_style="line"
+        app:indicator_visible_count="4"
+        app:text_color_normal="@color/gray"
+        app:text_color_selected="@color/white"
+        app:text_size="@dimen/DIMEN_SIZE_16DP" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaozhu.common.widget.fillet.FilletRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="@dimen/DIMEN_SIZE_300DP"
+    app:round_corner_bottom_left="@dimen/DIMEN_SIZE_20DP"
+    app:round_corner_bottom_right="@dimen/DIMEN_SIZE_20DP"
+    app:round_corner_top_left="@dimen/DIMEN_SIZE_20DP"
+    app:round_corner_top_right="@dimen/DIMEN_SIZE_20DP"
+    app:stroke_color="@color/gray"
+    app:stroke_width="@dimen/DIMEN_SIZE_1DP">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/shareTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="@dimen/DIMEN_SIZE_40DP"
+            android:text="@string/share_title"
+            android:textColor="@color/black" />
+
+        <include layout="@layout/common_line" />
+
+        <TextView
+            android:id="@+id/share_wechat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shareTitle"
+            android:gravity="center"
+            android:minHeight="@dimen/DIMEN_SIZE_40DP"
+            android:text="@string/wechat"
+            android:textColor="@color/common_color" />
+
+        <include layout="@layout/common_line" />
+
+        <TextView
+            android:id="@+id/share_circle_friends"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/share_wechat"
+            android:gravity="center"
+            android:minHeight="@dimen/DIMEN_SIZE_40DP"
+            android:text="@string/circle_friends"
+            android:textColor="@color/common_color" />
+
+        <include layout="@layout/common_line" />
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/share_circle_friends"
+            android:gravity="center"
+            android:minHeight="@dimen/DIMEN_SIZE_40DP"
+            android:text="@string/cancel"
+            android:textColor="@color/common_color" />
+    </LinearLayout>
+</com.xiaozhu.common.widget.fillet.FilletRelativeLayout>
